@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/null.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-asterisk" viewBox="0 0 16 16">
+                    <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"/>
+                </svg>
+            </div>
+            <div class="logo__text">
+                Вариант 15
+            </div>
+        </div>
+        <div class="profile_block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__header">
+            <div class="content__title">
+                Отслеживание грузов
+            </div>
+            <div class="content__filter">
+                  
+                <select name="filter" id="filter-select">
+                    <option value="petersburg">По умолчанию</option>
+                    <option value="samara">В пути</option>
+                    <option value="perm">Доставлен</option>
+                    <option value="novosibirsk">Опаздывает</option>
+                    <option value="novosibirsk">Отменен</option>
+                  </select>
+            </div>
+        </div>
+        <div class="content__data">
+            <div class="content__item content-item">
+                <div class="content-item__status on_the_way">В пути</div>
+                <div class="content-item__title">Заказ номер #12312412</div>
+                <div class="content-item__info">
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Вес:</div>
+                        <div class="content-item__value-data">2,7 кг</div>
+                    </div>
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Цена:</div>
+                        <div class="content-item__value-data">13 000 руб</div>
+                    </div>
+                </div>
+                <div class="content-item__driver driver">
+                    <img class="driver__img" src="../static/img/user_logo.png" alt="">
+                    <div class="driver__info">
+                        <div class="driver__title">
+                            Кочетков Артем Игоревич
+                        </div>
+                        <div class="driver__car driver-car">
+                            <div class="driver-car__type">
+                                Легковой
+                            </div>
+                            <div class="driver__circle">
+                                •
+                            </div>
+                            <div class="driver-car__number">
+                                B 095PA 46
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__item content-item">
+                <div class="content-item__status delivered">Доставлен</div>
+                <div class="content-item__title">Заказ номер #12312412</div>
+                <div class="content-item__info">
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Вес:</div>
+                        <div class="content-item__value-data">2,7 кг</div>
+                    </div>
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Цена:</div>
+                        <div class="content-item__value-data">13 000 руб</div>
+                    </div>
+                </div>
+                <div class="content-item__driver driver">
+                    <img class="driver__img" src="../static/img/user_logo.png" alt="">
+                    <div class="driver__info">
+                        <div class="driver__title">
+                            Кочетков Артем Игоревич
+                        </div>
+                        <div class="driver__car driver-car">
+                            <div class="driver-car__type">
+                                Легковой
+                            </div>
+                            <div class="driver__circle">
+                                •
+                            </div>
+                            <div class="driver-car__number">
+                                B 095PA 46
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__item content-item">
+                <div class="content-item__status canceled">Отменен</div>
+                <div class="content-item__title">Заказ номер #12312412</div>
+                <div class="content-item__info">
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Вес:</div>
+                        <div class="content-item__value-data">2,7 кг</div>
+                    </div>
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Цена:</div>
+                        <div class="content-item__value-data">13 000 руб</div>
+                    </div>
+                </div>
+                <div class="content-item__driver driver">
+                    <img class="driver__img" src="../static/img/user_logo.png" alt="">
+                    <div class="driver__info">
+                        <div class="driver__title">
+                            Кочетков Артем Игоревич
+                        </div>
+                        <div class="driver__car driver-car">
+                            <div class="driver-car__type">
+                                Легковой
+                            </div>
+                            <div class="driver__circle">
+                                •
+                            </div>
+                            <div class="driver-car__number">
+                                B 095PA 46
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__item content-item">
+                <div class="content-item__status on_the_way">В пути</div>
+                <div class="content-item__title">Заказ номер #12312412</div>
+                <div class="content-item__info">
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Вес:</div>
+                        <div class="content-item__value-data">2,7 кг</div>
+                    </div>
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Цена:</div>
+                        <div class="content-item__value-data">13 000 руб</div>
+                    </div>
+                </div>
+                <div class="content-item__driver driver">
+                    <img class="driver__img" src="../static/img/user_logo.png" alt="">
+                    <div class="driver__info">
+                        <div class="driver__title">
+                            Кочетков Артем Игоревич
+                        </div>
+                        <div class="driver__car driver-car">
+                            <div class="driver-car__type">
+                                Легковой
+                            </div>
+                            <div class="driver__circle">
+                                •
+                            </div>
+                            <div class="driver-car__number">
+                                B 095PA 46
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__item content-item">
+                <div class="content-item__status is_late">Опаздывает</div>
+                <div class="content-item__title">Заказ номер #12312412</div>
+                <div class="content-item__info">
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Вес:</div>
+                        <div class="content-item__value-data">2,7 кг</div>
+                    </div>
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Цена:</div>
+                        <div class="content-item__value-data">13 000 руб</div>
+                    </div>
+                </div>
+                <div class="content-item__driver driver">
+                    <img class="driver__img" src="../static/img/user_logo.png" alt="">
+                    <div class="driver__info">
+                        <div class="driver__title">
+                            Кочетков Артем Игоревич
+                        </div>
+                        <div class="driver__car driver-car">
+                            <div class="driver-car__type">
+                                Легковой
+                            </div>
+                            <div class="driver__circle">
+                                •
+                            </div>
+                            <div class="driver-car__number">
+                                B 095PA 46
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__item content-item">
+                <div class="content-item__status on_the_way">В пути</div>
+                <div class="content-item__title">Заказ номер #12312412</div>
+                <div class="content-item__info">
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Вес:</div>
+                        <div class="content-item__value-data">2,7 кг</div>
+                    </div>
+                    <div class="content-item__value">
+                        <div class="content-item__value-title">Цена:</div>
+                        <div class="content-item__value-data">13 000 руб</div>
+                    </div>
+                </div>
+                <div class="content-item__driver driver">
+                    <img class="driver__img" src="../static/img/user_logo.png" alt="">
+                    <div class="driver__info">
+                        <div class="driver__title">
+                            Кочетков Артем Игоревич
+                        </div>
+                        <div class="driver__car driver-car">
+                            <div class="driver-car__type">
+                                Легковой
+                            </div>
+                            <div class="driver__circle">
+                                •
+                            </div>
+                            <div class="driver-car__number">
+                                B 095PA 46
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__title">
+            © Вариант 15. Чупахин Дмитрий, группа ПИ-22-1
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+      
+      dropdownToggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function () {
+          var dropdownMenu = toggle.nextElementSibling;
+          
+          // Закрытие других меню, если открыты
+          document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+            if (menu !== dropdownMenu) {
+              menu.classList.remove('show');
+            }
+          });
+          
+          // Открыть/закрыть текущее меню
+          dropdownMenu.classList.toggle('show');
+        });
+      });
+      
+      // Закрытие меню по клику вне области dropdown
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.dropdown')) {
+          document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+            menu.classList.remove('show');
+          });
+        }
+      });
+    });
+  </script>
+  
+</html>

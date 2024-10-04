@@ -1,0 +1,208 @@
+body{
+    font-family: "IBM Plex Serif", serif;
+}
+.header{
+    border-bottom: 1px solid #EAECF0;
+}
+.header, .footer{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.content{
+    min-height: 100vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo__text{
+    font-weight: 600;
+}
+.logo__img{
+    display: flex;
+    align-items:center ;  
+}
+.bi{
+    width: 20px;
+    height: 20px;
+}
+
+.content__header{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.content__title{
+    font-size: 24px;
+    font-weight: 600px;
+    display: flex;
+    align-items: center;
+}
+.content__filter{
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+.content__data{
+    display: grid;
+    padding: 20px 5%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+}
+@media only screen and (max-width: 1280px) {
+	.content__data{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+@media only screen and (max-width: 920px) {
+	.content__data{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+@media only screen and (max-width: 620px) {
+	.content__data{
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+.content-item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 14px;
+    overflow: hidden;           /* Скрывает текст, выходящий за пределы */
+    white-space: nowrap;        /* Запрещает перенос текста на новую строку */
+    text-overflow: ellipsis;    /* Добавляет "..." в конце текста */
+    width: 100%;
+}
+.content-item__status{
+    display: flex;
+    width: min-content;
+    padding: 10px 16px;
+    border-radius: 16px;
+}
+.content-item__status.on_the_way{
+    background: #ECFDF3;
+    color: #027A48;
+}
+.content-item__status.delivered{
+    background: #F2F4F7;
+}
+.content-item__status.canceled{
+    background: #FEF3F2;
+    color: #B42318;
+
+}
+.content-item__status.is_late{
+    background: #FFFAEB;
+    color: #B54708;
+
+}
+.content-item__title{
+    font-size: 18px;
+
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.content-item__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EAECF0;
+}
+.content-item__value{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.content-item__value-title{
+    color: #667085;
+}
+.content-item__value-data{
+
+}
+.driver__img{
+    width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	border-radius: 50%;
+	min-height: 56px;
+	min-width: 56px;
+	max-height: 56px;
+	max-width: 56px;
+	object-fit: cover;
+}
+.driver{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.driver__info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.driver__title{
+    font-size: 16px;
+
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.driver-car{
+    display: flex;
+    gap: 8px;
+    color: #667085;
+}
+
+
+/* Минимальные стили для Dropdown */
+.dropdown {
+    position: relative;
+  }
+  .dropdown-toggle {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25rem;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
+  .dropdown-menu.show {
+    display: block;
+  }
+  
