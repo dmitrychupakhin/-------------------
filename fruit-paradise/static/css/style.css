@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jura", sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a, .cart-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.cart-btn {
+    background-color: transparent;
+    border: 1px solid #888888;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: #888888;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px;
+}
+
+.product-card {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    font-size: 20px;
+}
+
+.price {
+    font-size: 18px;
+    color: #888;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f3f3f3;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+}
+
+.product-card-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -26,8 +26,8 @@ body{
     align-items:center ;  
 }
 .bi{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .content__header{
@@ -49,23 +49,8 @@ body{
 .content__data{
     display: grid;
     padding: 20px 5%;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
-}
-@media only screen and (max-width: 1280px) {
-	.content__data{
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    }
-}
-@media only screen and (max-width: 920px) {
-	.content__data{
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    }
-}
-@media only screen and (max-width: 620px) {
-	.content__data{
-        grid-template-columns: minmax(0, 1fr);
-    }
 }
 .content-item{
     display: flex;
